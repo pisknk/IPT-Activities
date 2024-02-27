@@ -2,16 +2,24 @@
 <html lang="en">
 
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="signupstyle.css" rel="stylesheet">
     <title>Create an Account</title>
+
+    <!-- Preload images -->
+    <link href="images/blurbg.png" rel="preload" as="image">
+    <link href="images/loginpic.png" rel="preload" as="image">
+    <link href="images/logo.png" rel="preload" as="image">
+    <link href="images/newacc.gif" rel="preload" as="image">
+
   </head>
 
   <body>
 
-    <form action="dashboard/index.html">
+    <form action="dashboard/index.html"> <!-- form validation -->
     <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh; margin: 0;">
     
         <div class="container"> <!-- Card container -->
@@ -20,56 +28,55 @@
                     <div class="row align-items-center justify-content-center">
 
                         <div class="col-6"> <!-- 1st half, content -->
+
                             <div class="text-center">
-                            <h1>Create an Account</h1>
-                            <p1>To browse and purchase products from Thirdd, you'll need to create an account first.</p1>
-                        </div>
+                                <img src="images/newacc.gif" class="giflogo">
+                                <h1>Create an Account</h1>
+                                <p1>To browse and purchase products from Thirdd, you'll need to create an account first.</p1>
+                            </div>
                 
-                        <div class="row justify-content-center"> <!-- Input fields, collected into one -->
+                            <div class="row justify-content-center"> <!-- Input fields, collected into one -->
 
-                            <div class="col"> <!-- self explainatory fields -->
-                                <input type="text" class="form-control usernamebox1" placeholder="Name" required autofocus>
+                                <div class="col"> <!-- self explainatory fields -->
+                                    <input type="text" class="form-control usernamebox1" placeholder="Name" required autofocus>
+                                </div>
+
+                                <div class="col">
+                                    <input type="text" class="form-control usernamebox" placeholder="Address" required>
+                                </div>
+
+                                <div class="col">
+                                    <input type="number" class="form-control usernamebox" placeholder="Phone" required>
+                                </div>
+
+                                <div class="col">
+                                    <input type="email" class="form-control usernamebox" placeholder="Email" required>
+                                </div>
+
+                                <div class="col">
+                                    <input type="password" class="form-control usernamebox" pattern=".{6,}" placeholder="Password" required>
+                                </div>
+
+                                <div class="col">
+                                    <input type="password" class="form-control usernamebox" pattern=".{6,}" placeholder="Verify Password" required>
+                                </div>
+
                             </div>
-
-                            <div class="col">
-                                <input type="text" class="form-control usernamebox" placeholder="Address" required>
-                            </div>
-
-                            <div class="col">
-                                <input type="number" class="form-control usernamebox" placeholder="Phone" required>
-                            </div>
-
-                            <div class="col">
-                                <input type="email" class="form-control usernamebox" placeholder="Email" required>
-                            </div>
-
-                            <div class="col">
-                                <input type="password" class="form-control usernamebox" pattern=".{6,}" placeholder="Password" required>
-                            </div>
-
-                            <div class="col">
-                                <input type="password" class="form-control usernamebox" pattern=".{6,}" placeholder="Verify Password" required>
-                            </div>
-
-                        </div>
                         
-                        <div class="row actionbar">
+                            <div class="row actionbar">
 
-                            <div class="col"> <!-- layout sa login button -->
-                                <button type="submit" class="btn btn-primary">Create an Account</button>
-                            </div>
-                            
-                            <div class="col text-center loginbutton"> <!-- para ma center -->
-                                <p2>Or <a href="index.html">Login now!</a></p2>
+                                <div class="col"> <!-- layout sa login button -->
+                                    <button type="submit" class="btn btn-primary">Create an Account</button>
+                                </div>
+                                
+                                <div class="col text-center loginbutton"> <!-- para ma center -->
+                                    <p2>Or <a href="index.html">Login now!</a></p2>
+                                </div>
+
                             </div>
 
                         </div>
 
-                        </div>
-
-                    <div class="col-6"> <!-- 2nd half, image on left -->
-                        <img src="images/loginpic.png" class="card-img">
-                    </div>
                     </div>
                 </div>
             </div>

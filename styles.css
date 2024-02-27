@@ -4,6 +4,8 @@
 
 h1, p1, p2{
     font-family: 'Inter', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
@@ -14,12 +16,6 @@ h1{
 p1{
     font-size: 18px;
     font-weight: regular;
-}
-
-p2{
-    font-size: 16px;
-    font-weight: regular;
-    margin-top: 30px;
 }
 
 /* for body bg colour */
@@ -33,44 +29,78 @@ body{
 .customized-card{
     background: #FFF;
     box-shadow: 0px 0px 64.7px 0px rgba(0, 0, 0, 0.25);
+    width: auto;
+    height: auto;
 }
 
 /* input field and button properties */
 
-.usernamebox, .passwordbox, .usernamebox1{
-    margin-left: 50px;
-    margin-right: 20px;
+.inputfields{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .usernamebox{
     margin-top: 60px;
     margin-bottom: 30px;
-    width: 400px;
+    width: 380px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .passwordbox{
     width: auto;
-}
-
-.buttons{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 20px;
+    margin-left: 3.8rem;
+    margin-right: auto;
 }
 
 .actionbar{
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 38px;
+    margin-left: 3.8rem;
+    margin-right: auto;
 }
 
-.createbutton{
-    margin-right: 60px;
+.createacc{
+    color: blue;
+    text-decoration-line: underline;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .usernamebox1{
     margin-top: 30px;
     margin-bottom: -30px;
     width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forgotbox{
+    margin-top: 30px;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.forgotbox1{
+    margin-top: 30px;
+    width: 390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Image properties */
+
+.logo{
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.giflogo{
+    width: 9.3125rem;
+    height: 9.3125rem;
+    margin-bottom: 2rem;
+    flex-shrink: 0;
 }

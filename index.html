@@ -2,62 +2,76 @@
 <html lang="en">
 
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <title>Continue to Thirdd</title>
+
+    <!-- Preload images -->
+    <link href="images/blurbg.png" rel="preload" as="image">
+    <link href="images/loginpic.png" rel="preload" as="image">
+    <link href="images/logo.png" rel="preload" as="image">
+
   </head>
 
   <body>
 
-    <form action="dashboard/index.html">
-    <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh; margin: 0;">
+    <form action="dashboard/index.html"> <!-- form validation -->
+    <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh; margin: 0;"> <!-- making sure na nasa centre ang content -->
     
         <div class="container"> <!-- Card container -->
-            <div class="card customized-card" style="width: auto;">
+            <div class="card customized-card">
                 <div class="card-body">
                     <div class="row align-items-center justify-content-center">
 
                         <div class="col-6"> <!-- 1st half, content -->
+
                             <div class="text-center">
-                            <h1>Welcome ka-thirdd!</h1>
-                            <p1>Login to your account</p1>
-                        </div>
+                                <img src="images/logo.png" class="logo">
+                                <h1>Welcome ka-thirdd!</h1>
+                                <p1>Login to your account</p1>
+                            </div>
                 
-                        <div class="row justify-content-center"> <!-- Input fields, collected into one -->
+                            <div class="row justify-content-center inputfields"> <!-- Input fields, collected into one -->
 
-                            <div class="col"> <!-- self explainatory fields -->
-                                <input type="text" class="form-control usernamebox" placeholder="Username or e-mail" required autofocus>
-                            </div>
+                                <div class="col"> <!-- self explainatory fields -->
+                                    <input type="text" class="form-control usernamebox" placeholder="Username or e-mail" required autofocus>
+                                </div>
 
-                            <div class="col">
-                                <input type="password" class="form-control passwordbox" placeholder="Password" required>
-                            </div>
+                                <div class="col">
+                                    <input type="password" class="form-control passwordbox" placeholder="Password" required>
+                                </div>
 
-                            <div class="col">
-                                <a href="send-code.html">
-                                    <button type="button" class="btn btn-secondary">Forgot Password?</button>
-                                </a>
-                            </div>
+                                <div class="col">
+                                    <a href="send-code.html">
+                                        <button type="button" class="btn btn-secondary">Forgot Password?</button>
+                                    </a>
+                                </div>
 
-                        </div>
-                        
-                        <div class="row actionbar">
-                            <div class="col"> <!-- layout sa login button -->
-                                <button type="submit" class="btn btn-primary" href="dashboard/admin.html">Login</button>
                             </div>
                             
-                            <div class="col text-center createbutton"> <!-- para ma center -->
-                                <p2>Or <a href="signup.html">Create an Account</a></p2>
+                            <div class="row actionbar"> <!-- layout sa login button ug create -->
+
+                                <div class="col"> 
+                                    <button type="submit" class="btn btn-primary" href="dashboard/admin.html">Login</button>
+                                </div>
+                                
+                                <div class="col">
+                                    <a href="signup.html">
+                                        <button type="button" class="btn createacc">Create an Account</button>
+                                    </a>
+                                </div>
+                                
                             </div>
-                        </div>
 
                         </div>
 
-                    <div class="col-6"> <!-- 2nd half, image on left -->
-                        <img src="images/loginpic.png" class="card-img">
-                    </div>
+                        <div class="col-6"> <!-- 2nd half, image on left -->
+                            <img src="images/loginpic.png" class="card-img">
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -65,6 +79,6 @@
     </div>
     </form>
 
-    </body>
+  </body>
 
 </html>
