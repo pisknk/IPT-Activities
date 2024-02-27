@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <title>Continue to Thirdd</title>
+    <link href="signupstyle.css" rel="stylesheet">
+    <title>Create an Account</title>
   </head>
 
   <body>
@@ -21,36 +21,48 @@
 
                         <div class="col-6"> <!-- 1st half, content -->
                             <div class="text-center">
-                            <h1>Welcome ka-thirdd!</h1>
-                            <p1>Login to your account</p1>
+                            <h1>Create an Account</h1>
+                            <p1>To browse and purchase products from Thirdd, you'll need to create an account first.</p1>
                         </div>
                 
                         <div class="row justify-content-center"> <!-- Input fields, collected into one -->
 
                             <div class="col"> <!-- self explainatory fields -->
-                                <input type="text" class="form-control usernamebox" placeholder="Username or e-mail" required autofocus>
+                                <input type="text" class="form-control usernamebox1" placeholder="Name" required autofocus>
                             </div>
 
                             <div class="col">
-                                <input type="password" class="form-control passwordbox" placeholder="Password" required>
+                                <input type="text" class="form-control usernamebox" placeholder="Address" required>
                             </div>
 
                             <div class="col">
-                                <a href="send-code.html">
-                                    <button type="button" class="btn btn-secondary">Forgot Password?</button>
-                                </a>
+                                <input type="number" class="form-control usernamebox" placeholder="Phone" required>
+                            </div>
+
+                            <div class="col">
+                                <input type="email" class="form-control usernamebox" placeholder="Email" required>
+                            </div>
+
+                            <div class="col">
+                                <input type="password" class="form-control usernamebox" pattern=".{6,}" placeholder="Password" required>
+                            </div>
+
+                            <div class="col">
+                                <input type="password" class="form-control usernamebox" pattern=".{6,}" placeholder="Verify Password" required>
                             </div>
 
                         </div>
                         
                         <div class="row actionbar">
+
                             <div class="col"> <!-- layout sa login button -->
-                                <button type="submit" class="btn btn-primary" href="dashboard/admin.html">Login</button>
+                                <button type="submit" class="btn btn-primary">Create an Account</button>
                             </div>
                             
-                            <div class="col text-center createbutton"> <!-- para ma center -->
-                                <p2>Or <a href="signup.html">Create an Account</a></p2>
+                            <div class="col text-center loginbutton"> <!-- para ma center -->
+                                <p2>Or <a href="index.html">Login now!</a></p2>
                             </div>
+
                         </div>
 
                         </div>
@@ -65,6 +77,6 @@
     </div>
     </form>
 
-    </body>
+  </body>
 
 </html>

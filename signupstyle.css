@@ -4,6 +4,8 @@
 
 h1, p1, p2{
     font-family: 'Inter', sans-serif;
+    margin-left: 20px;
+    margin-right: 30px;
 }
 
 h1{
@@ -42,21 +44,19 @@ body{
     margin-right: 20px;
 }
 
+.usernamebox1{
+    margin-top: 30px;
+    margin-bottom: 16px;
+    width: 400px;
+}
+
 .usernamebox{
-    margin-top: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
     width: 400px;
 }
 
 .passwordbox{
     width: auto;
-}
-
-.buttons{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 20px;
 }
 
 .actionbar{
@@ -65,12 +65,6 @@ body{
     margin-left: 38px;
 }
 
-.createbutton{
-    margin-right: 60px;
-}
-
-.usernamebox1{
-    margin-top: 30px;
-    margin-bottom: -30px;
-    width: 400px;
+.loginbutton{
+    margin-right: 18px;
 }

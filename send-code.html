@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <title>Create a new password</title>
+    <title>Forgot your Password?</title>
   </head>
 
   <body>
 
-    <form action="index.html">
+    <form action="forgotpassword.html">
     <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh; margin: 0;">
     
         <div class="container"> <!-- Card container -->
@@ -21,17 +21,14 @@
 
                         <div class="col-6"> <!-- 1st half, content -->
                             <div class="text-center">
-                            <h1>Create a New Password</h1>
+                            <h1>Did you forgot your password?</h1>
+                            <p1>No fear! Just enter your email and we'll send a recovery link.</p1>
                         </div>
                 
                         <div class="row justify-content-center"> <!-- Input fields, collected into one -->
 
                             <div class="col"> <!-- self explainatory fields -->
-                                <input type="password" class="form-control usernamebox1" placeholder="Enter New Password" required autofocus>
-                            </div>
-
-                            <div class="col"> <!-- self explainatory fields -->
-                                <input type="password" class="form-control usernamebox" placeholder="Verify New Password" required autofocus>
+                                <input type="email" class="form-control usernamebox" placeholder="email" required autofocus>
                             </div>
 
                         </div>
@@ -39,7 +36,7 @@
                         <div class="row actionbar">
 
                             <div class="col"> <!-- layout sa login button -->
-                                <button type="submit" class="btn btn-primary" href="forgotpassword.html">Send Code</button>
+                                <button type="submit" class="btn btn-primary">Send Code</button>
                             </div>
 
                         </div>
