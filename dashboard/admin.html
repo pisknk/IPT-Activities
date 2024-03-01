@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dashboard</title>
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+        <div class="row"> <!-- divider sa sidebar ug content -->
+
+            <div class="col-md-3 sidebar"> 
+
+                <ul class="nav flex-column"> <!-- sidebar -->
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-house-fill"></i>Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link inactive" href="#"><i class="bi bi-phone"></i>Inventory</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link inactive" href="#"><i class="bi bi-bar-chart-line"></i>Sales</a>
+                    </li>
+
+                    <div class="bottom-item dropdown"> <!-- items sa ubos -->
+
+                        <li class="nav-item dropdown"> <!-- admin drop down ment -->
+
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../images/logo.png" class="logo"> Admin
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="adminDropdown">
+                                <a class="dropdown-item logoutred" href="../index.html">Log out</a>
+                                <a class="dropdown-item" href="#">Add an Admin</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </div>
+
+                        </li>
+
+                    </div>
+
+                </ul>
+
+                
+            </div>
+
+            <div class="col-md-9 content"> <!-- main content -->
+
+                <h2>Welcome, Admin!</h2>
+                <p>Here are some quick actions you can try.</p>
+
+                <div class="row"> <!-- para ma same line ang action platters -->
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="#" class="add">
+                                <img src="../images/listing.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Add a Product</h5>
+                                <p2 class="card-text">Create a new product listing.</p2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="#" class="add">
+                                <img src="../images/manage.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Manage Products</h5>
+                                <p3 class="card-text">Add, delete, or edit store listings.</p3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <a href="#" class="add">
+                                <img src="../images/reciept.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Purchase History</h5>
+                                <p3 class="card-text">Look at recent purchases.</p3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="line"></div>
+
+                <div class="col-md-4 card salestats">
+                        <table class="table table-bordered text-center">
+                            <thead>
+                            <tr>
+                                <th class="blue" scope="col" colspan="2">Monthly Best Sellers</th>
+                                    <tr>
+                                        <td class="coral"># of Sales</td>
+                                        <td class="yellow">Product</td>
+                                    </tr>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th class="lightcoral" scope="row">112</th>
+                                <td class="lightyellow">Lightning Cable (No Brick)</td>
+                            </tr>
+                            <tr>
+                                <th class="lightcoral" scope="row">62</th>
+                                <td class="lightyellow">iPhone 11</td>
+                            </tr>
+                            <tr>
+                                <th class="lightcoral" scope="row">47</th>
+                                <td class="lightyellow" colspan="2">iPhone XR</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        </div>
+
+    <!-- javascript for dropdown menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

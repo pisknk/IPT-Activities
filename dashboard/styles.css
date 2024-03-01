@@ -1,0 +1,123 @@
+/* bootstrap icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* sidebar props */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+}
+
+.nav-item{
+    margin-bottom: 10px; /* individual na item sa list */
+}
+
+.nav{
+    margin-top: 20px;    /* navbar/sidebar margin top */
+}
+
+.active{                /* active tab */
+    color: blue;
+    font-weight: bold;
+}
+
+.inactive{                /* inactive tab */
+    color: #171717;
+}
+
+.bi{                /* icon props */
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.bottom-item {                /* para mu ubos ang isa ka item sa ubos */
+    position: absolute;
+    bottom: 40px; 
+    padding-right: 20px;
+}
+
+.logoutred{               /* logout button color */
+    color: red;
+}
+
+/* main content */
+.content {
+    margin-left: 16rem;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+.salestats{
+    margin-top: 3rem;
+    width: 24rem;
+    background-color: #171717;
+    border: none;
+}
+
+.line{
+    width: 49.375rem;
+    height: 0.0625rem;
+    background-color: #17171717;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+/* all text properties */
+p{
+    margin-bottom: 3rem;
+}
+
+p2, p3{
+    color: #171717;
+}
+
+.card-text1{
+    margin-bottom: 30px;
+}
+
+.add{
+    text-decoration: none;
+}
+
+/* table colours */
+
+.blue{
+    background-color: blue !important;
+    color: white !important;
+}
+
+.coral{
+    background-color: coral !important;
+}
+
+.lightcoral{
+    background-color: rgb(255, 235, 206) !important;
+}
+
+.yellow{
+    background-color: yellow !important;
+}
+
+.lightyellow{
+    background-color: rgb(255, 255, 198) !important;
+}
+
+.table{
+    color: #171717;
+    border-color: #171717;
+}
