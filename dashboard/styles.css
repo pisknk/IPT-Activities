@@ -102,6 +102,10 @@
     right: 50px;
 }
 
+select {                      /* date picker */
+    margin-top: 3rem;
+}
+
 /* all text properties */
 
 p, p2, p3, h1, h2, h3, h4, h5, .card-text1, .add, .bi, .edit, .delete{
