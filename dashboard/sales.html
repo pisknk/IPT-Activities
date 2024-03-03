@@ -5,7 +5,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Inventory</title>
+        <title>Purchases</title>
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
 
@@ -26,11 +26,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="inventory.html"><i class="bi bi-phone-fill"></i>Inventory</a>
+                        <a class="nav-link inactive" href="inventory.html"><i class="bi bi-phone"></i>Inventory</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link inactive" href="sales.html"><i class="bi bi-bar-chart-line"></i>Sales</a>
+                        <a class="nav-link active" href="sales.html"><i class="bi bi-bar-chart-line-fill"></i>Sales</a>
                     </li>
 
                     <div class="bottom-item dropdown"> <!-- items sa ubos -->
@@ -59,8 +59,9 @@
 
             <div class="col-md-9 content"> <!-- main content -->
 
-                <h2>Inventory</h2>
-                <p>Manage your inventory below.</p>
+                <h2>Purchase History</h2>
+                <p>Look at Recently Purchased items from this month.</p>
+                <mark>Note: Items listed in here are Final and Not Editable.</mark>
 
                 <div class="line"></div>
 
@@ -73,11 +74,11 @@
                                         <table class="table table-hover table-striped table-bordered text-center">
                                             <thead> <!-- header sa table -->
                                                 <tr class="table-dark">
-                                                    <th>Remaining Stock</th>
-                                                    <th>Unit Price</th>
+                                                    <th>Date Sold</th>
+                                                    <th>Order ID</th>
                                                     <th>Category</th>
                                                     <th>Item Name</th>
-                                                    <th>Last Sold</th>
+                                                    <th>Quantity</th>
                                                     <th>Actions</th>
                                                 </tr>
                                             </thead>

@@ -4,6 +4,8 @@
 /* font imports */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* gamit ug REM!! PX for font lang - love neil :) xoxo */
+
 /* sidebar props */
 .sidebar {
     position: fixed;
@@ -33,7 +35,7 @@
     color: #171717;
 }
 
-.logo{
+.logo{                     /* thridd logo on "Admin" text */
     width: 50px;
     height: 50px;
     margin-right: 10px;
@@ -50,34 +52,35 @@
 }
 
 /* main content */
+
 .content {
     margin-left: 16rem;
     margin-top: 60px;
     padding: 20px;
 }
 
-.salestats{
+.salestats{                /* monthly sold stats widget */
     margin-top: 3rem;
     width: 24rem;
     background-color: none;
     border: none;
 }
 
-.recentcard{
+.recentcard{                /* recently sold stat widget */
     margin-left: 5rem;
     margin-top: 3rem;
     max-width: 29rem;
     padding: 20px;
 }
 
-.phonepic{
+.phonepic{                /* pic for recent widget */
     width: auto;
     height: auto;
     margin-left: -10px;
     margin-top: 10px;
 }
 
-.line{
+.line{                      /* line separator */
     width: 49.375rem;
     height: 0.0625rem;
     background-color: #17171717;
@@ -86,14 +89,14 @@
     margin-top: 3rem;
 }
 
-.inventory{
+.inventory{                 /* inventory div */
     width: auto;
     background-color: none;
     border: none;
     margin-top: -1rem;
 }
 
-.fab {
+.fab {                      /* floating action bar */
     position: fixed;
     bottom: 50px;
     right: 50px;
@@ -144,7 +147,13 @@ h5{
     padding: 20px;
 }
 
+mark{
+    background-color: red;
+    color: white;
+}
+
 /* table colours */
+/* !important is para ma override ang default colour ni bootstrap */
 
 .blue{
     background-color: blue !important;
