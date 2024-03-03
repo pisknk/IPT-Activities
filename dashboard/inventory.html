@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inventory</title>
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+
+        <div class="row"> <!-- divider sa sidebar ug content -->
+
+            <div class="col-md-3 sidebar"> 
+
+                <ul class="nav flex-column"> <!-- sidebar -->
+
+                    <li class="nav-item">
+                        <a class="nav-link inactive" href="admin.html"><i class="bi bi-house"></i>Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="inventory.html"><i class="bi bi-phone-fill"></i>Inventory</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link inactive" href="#"><i class="bi bi-bar-chart-line"></i>Sales</a>
+                    </li>
+
+                    <div class="bottom-item dropdown"> <!-- items sa ubos -->
+
+                        <li class="nav-item dropdown"> <!-- admin drop down ment -->
+
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="adminDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../images/logo.png" class="logo"> Admin
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="adminDropdown">
+                                <a class="dropdown-item logoutred" href="../index.html">Log out</a>
+                                <a class="dropdown-item" href="#">Add an Admin</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </div>
+
+                        </li>
+
+                    </div>
+
+                </ul>
+
+                
+            </div>
+
+            <div class="col-md-9 content"> <!-- main content -->
+
+                <h2>Inventory</h2>
+                <p>Manage your inventory below.</p>
+
+                <div class="line"></div>
+
+                <main role="main" class="align-items-center" style="margin-top: 3rem; padding: 20px;">
+                    <div class="row">
+                        <div class="col-md mx-auto">
+                            <div class="card w-100 inventory">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-striped table-bordered text-center">
+                                            <thead> <!-- header sa table -->
+                                                <tr class="table-dark">
+                                                    <th>Remaining Stock</th>
+                                                    <th>Item Name</th>
+                                                    <th>Last Sold</th>
+                                                    <th>Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody> <!-- body of the table AKA sulod sa table-->
+                                                <tr> <!-- tr is Table Row-->
+                                                    <td>320</td><!-- td is Table Data-->
+                                                    <td>Magsafe Puck</td>
+                                                    <td>23 Minutes Ago</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-primary" title="Edit Listing"><i class="bi-pencil-square edit"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="Delete"><i class="bi-trash delete"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr> <!-- tr is Table Row-->
+                                                    <td>164</td><!-- td is Table Data-->
+                                                    <td>iPhone Case (All)</td>
+                                                    <td>56 Minutes Ago</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-primary" title="Edit Listing"><i class="bi-pencil-square edit"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="Delete"><i class="bi-trash delete"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr> <!-- tr is Table Row-->
+                                                    <td>62</td><!-- td is Table Data-->
+                                                    <td>Lightning Cable</td>
+                                                    <td>2 Hours Ago</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-primary" title="Edit Listing"><i class="bi-pencil-square edit"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="Delete"><i class="bi-trash delete"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr> <!-- tr is Table Row-->
+                                                    <td>24</td><!-- td is Table Data-->
+                                                    <td>iPhone 11</td>
+                                                    <td>12 Hours Ago</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-primary" title="Edit Listing"><i class="bi-pencil-square edit"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="Delete"><i class="bi-trash delete"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr> <!-- tr is Table Row-->
+                                                    <td>12</td><!-- td is Table Data-->
+                                                    <td>iPhone XR</td>
+                                                    <td>23 Hours Ago</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-primary" title="Edit Listing"><i class="bi-pencil-square edit"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="Delete"><i class="bi-trash delete"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr> <!-- tr is Table Row-->
+                                                    <td>6</td><!-- td is Table Data-->
+                                                    <td>Charging Brick (12w)</td>
+                                                    <td>February 28, 2024</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-primary" title="Edit Listing"><i class="bi-pencil-square edit"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="Delete"><i class="bi-trash delete"></i></button>
+                                                    </td>
+                                                </tr>
+                                                <tr> <!-- tr is Table Row-->
+                                                    <td>1</td><!-- td is Table Data-->
+                                                    <td>iPhone 15</td>
+                                                    <td>None</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-primary" title="Edit Listing"><i class="bi-pencil-square edit"></i></button>
+                                                        <button class="btn btn-sm btn-danger" title="Delete"><i class="bi-trash delete"></i></button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </main>
+                
+                <div class="fab"> <!-- floating action button -->
+                    <a href="add.html">
+                        <button class="btn btn-primary btn-lg">+ Add a Product</button>
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+        </div>
+
+    <!-- javascript for dropdown menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
+
+</html>

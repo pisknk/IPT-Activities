@@ -33,11 +33,6 @@
     color: #171717;
 }
 
-.bi{                /* icon props */
-    font-size: 30px;
-    margin-right: 20px;
-}
-
 .logo{
     width: 50px;
     height: 50px;
@@ -64,8 +59,22 @@
 .salestats{
     margin-top: 3rem;
     width: 24rem;
-    background-color: #171717;
+    background-color: none;
     border: none;
+}
+
+.recentcard{
+    margin-left: 5rem;
+    margin-top: 3rem;
+    max-width: 29rem;
+    padding: 20px;
+}
+
+.phonepic{
+    width: auto;
+    height: auto;
+    margin-left: -10px;
+    margin-top: 10px;
 }
 
 .line{
@@ -77,7 +86,25 @@
     margin-top: 3rem;
 }
 
+.inventory{
+    width: auto;
+    background-color: none;
+    border: none;
+    margin-top: -1rem;
+}
+
+.fab {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
 /* all text properties */
+
+p, p2, p3, h1, h2, h3, h4, h5, .card-text1, .add, .bi, .edit, .delete{
+    font-family: 'Inter', sans-serif;
+}
+
 p{
     margin-bottom: 3rem;
 }
@@ -86,12 +113,35 @@ p2, p3{
     color: #171717;
 }
 
+h2{
+    font-weight: bold !important;
+}
+
+h5{
+    font-weight: bold;
+}
+
 .card-text1{
     margin-bottom: 30px;
 }
 
 .add{
     text-decoration: none;
+}
+
+.bi{                /* icon props */
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.edit{
+    font-size: 20px !important;
+    padding: 20px;
+}
+
+.delete{
+    font-size: 20px !important;
+    padding: 20px;
 }
 
 /* table colours */
@@ -103,6 +153,7 @@ p2, p3{
 
 .coral{
     background-color: coral !important;
+    font-weight: bold;
 }
 
 .lightcoral{
@@ -111,6 +162,7 @@ p2, p3{
 
 .yellow{
     background-color: yellow !important;
+    font-weight: bold;
 }
 
 .lightyellow{
