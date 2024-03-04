@@ -2,7 +2,7 @@
 
 /* All text properties within the CSS */
 
-h1, p1, p2{
+h1, p1, p2, p6, .cancelbutton{
     font-family: 'Inter', sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -16,6 +16,14 @@ h1{
 p1{
     font-size: 18px;
     font-weight: regular;
+}
+
+p6{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* for body bg colour */
@@ -34,6 +42,7 @@ body{
 }
 
 /* input field and button properties */
+/* classes are self explainatory lol */
 
 .inputfields{
     margin-left: auto;
@@ -90,6 +99,58 @@ body{
     margin-right: auto;
 }
 
+.line{
+    width: 14.125rem;
+    height: 0.0625rem;
+    background: #b8b8b8;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+.addfirst{
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.addsubsequent{
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.addsameline{
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.naurbutton{
+    margin-top: 3rem;
+    color: red;
+    font-weight: regular;
+}
+
+.gaurbutton{
+    margin-top: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.cancelornot{
+    margin-top: 6rem;
+    margin-left: 4rem;
+}
+
+.lastactions{
+    margin-bottom: 3rem;
+}
+
 /* Image properties */
 
 .logo{
@@ -103,4 +164,11 @@ body{
     height: 9.3125rem;
     margin-bottom: 2rem;
     flex-shrink: 0;
+}
+
+.logoadd{
+    width: 100px;
+    height: 100px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }

@@ -9,6 +9,13 @@
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
 
+        <!-- preload images -->
+        <link rel="preload" href="../images/logo.png" as="image">
+        <link rel="preload" href="../images/iPhone11.png" as="image">
+        <link rel="preload" href="../images/listing.png" as="image">
+        <link rel="preload" href="../images/manage.png" as="image">
+        <link rel="preload" href="../images/reciept.png" as="image">
+
     </head>
 
     <body>
@@ -64,9 +71,9 @@
 
                 <div class="row"> <!-- para ma same line ang action platters -->
 
-                    <div class="col-md-4">
+                    <div class="col-md-4"> <!-- add products -->
                         <div class="card" style="width: 18rem;">
-                            <a href="#" class="add">
+                            <a href="add.html" class="add">
                                 <img src="../images/listing.png" class="card-img-top">
                                 <div class="card-body">
                                 <h5 class="card-title">Add a Product</h5>
@@ -76,7 +83,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4"> <!-- manage products -->
                         <div class="card" style="width: 18rem;">
                             <a href="inventory.html" class="add">
                                 <img src="../images/manage.png" class="card-img-top">
@@ -88,7 +95,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4"> <!-- purchase history -->
                         <div class="card" style="width: 18rem;">
                             <a href="sales.html" class="add">
                                 <img src="../images/reciept.png" class="card-img-top">
@@ -102,10 +109,11 @@
 
                 </div>
 
-                <div class="line"></div>
+                <div class="line"></div> <!-- line for depth effect -->
 
                 <div class="row">
-                <div class="col-md-4 card salestats justify-content-center">
+
+                    <div class="col-md-4 card salestats justify-content-center"> <!-- quick sale stats widget -->
                         <table class="table table-bordered text-center">
                             <thead>
                             <tr>
@@ -131,23 +139,30 @@
                             </tr>
                             </tbody>
                         </table>
-                </div>
-
-                    <div class="card mb-3 recentcard">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="../images/iPhone11.png" class="img-fluid rounded-start phonepic">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Recently Purchased</h5>
-                              <p class="card-text">iPhone 11 [128GB]</p>
-                              <p class="card-text"><small class="text-body-secondary">Last updated 12 hours ago</small></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
+
+                    <div class="card mb-3 recentcard"> <!-- recently sold widget -->
+
+                        <div class="row g-0">
+
+                            <div class="col-md-4">
+                                <img src="../images/iPhone11.png" class="img-fluid rounded-start phonepic">
+                            </div>
+
+                            <div class="col-md-8">
+
+                                <div class="card-body">
+                                    <h5 class="card-title">Recently Purchased</h5>
+                                    <p class="card-text">iPhone 11 [128GB]</p>
+                                    <p class="card-text"><small class="text-body-secondary">Last updated 12 hours ago</small></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
 
                 </div>
 
