@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* sorted by heiarchy, separated css frm the others */
+
+body{                       /* body bg */
+    background-image: url(media/bg.png);
+    background-attachment: fixed;
+}
+
+.wave{                       /* wave gif */
+    width: 150px;
+    height: 150px;
+}
+
+.wait{                       /* wave gif */
+    width: 150px;
+    height: 150px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-left: -1rem;
+}
+
+.headers{                       /* header props */
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#carouselExampleIndicators {                       /* carousel < > */
+    width: 600px;
+    height: 338px;
+}
+.carousel-inner img {                       /* carousel images probs */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.fixed-bottom{                       /* bottom nav bar */
+    background: rgba(0, 0, 0, 0.51) !important;
+    backdrop-filter: blur(92.80000305175781px) !important;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.034) !important;
+}
+
+.logo{                       /* logo props */
+    margin-left: 1rem;
+    width: 30px;
+    height: 30px;
+    margin-right: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, p1, p2, p3, p5, p9, p10, p11, p12, p13, p14{ /* all fonts here */
+    font-family: 'Inter', sans-serif;
+}
+
+a{                       /* hyperlink no underlin */
+    text-decoration: none;
+}
+
+h1{                       /* carousel main tetx */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #ffffff;
+}
+
+h2, h3{                       /* carousel main text */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #ffffff;
+}
+
+p2, p3{                       /* carousel subtitle */
+    font-size: 18px;
+    font-weight: regular;
+    margin-top: 3rem;
+    margin-bottom: auto;
+    color: #ffffff;
+}
+
+h7{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h8{
+    color: #ffffff;
+    font-weight: 400;
+}
+
+h9{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+h10{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+h11{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+p12, p13, p14{
+    font-weight: bold;
+}
+
+.introhead{
+    margin-top: 6.6rem;
+}
+
+.about{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.time{
+    margin-left: 1rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.active{                       /* active bar - navbar */
+    color: #ffffff !important;
+}
+
+.inactive{                       /* inactive bar */
+    color: #ffffff !important;
+}
+
+.container{
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+}
+
+.col{
+    margin-top: 3rem;
+}
+
+.card1{
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.bestseller{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.action1{
+    margin-top: 2rem;
+    border-radius: 1.625rem;
+}
+
+.action2{
+    margin-top: 2rem;
+    border-radius: 1.625rem;
+}
+
+.card2, .card3{
+    border-radius: 2rem;
+}
+
+.accessories, .phones{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.sticky-bottom{
+    margin-top: 10rem;
+}
+
+.dropdown{
+    margin-top: 3rem;
+}
+
+.mappin{
+    width: 90px;
+    height: 90px;
+    margin-top: -1.8rem;
+}
+
+.localhead{
+    margin-top: 4rem;
+}
+
+.line{                      /* line separator */
+    width: 49.375rem;
+    height: 0.0625rem;
+    background-color: #17171777;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}

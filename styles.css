@@ -30,6 +30,7 @@ p6{
 
 body{
     background-image: url(images/blurbg.png);
+    background-attachment: fixed;
 }
 
 /* custom card layout */
@@ -39,6 +40,7 @@ body{
     box-shadow: 0px 0px 64.7px 0px rgba(0, 0, 0, 0.25);
     width: auto;
     height: auto;
+    margin: 60px;
 }
 
 /* input field and button properties */
@@ -59,14 +61,14 @@ body{
 
 .passwordbox{
     width: auto;
-    margin-left: 3.8rem;
+    margin-left: 2rem;
     margin-right: auto;
 }
 
 .actionbar{
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 3.8rem;
+    margin-left: 2.5rem;
     margin-right: auto;
 }
 
