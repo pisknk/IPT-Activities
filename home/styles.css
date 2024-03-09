@@ -12,7 +12,13 @@ body{                       /* body bg */
     height: 150px;
 }
 
-.wait{                       /* wave gif */
+.plug{                       /* plug pic */
+    width: 150px;
+    height: 150px;
+    margin-bottom: 2rem;
+}
+
+.wait{                       /* wait gif */
     width: 150px;
     height: 150px;
     margin-top: 4rem;
@@ -51,7 +57,7 @@ body{                       /* body bg */
     margin-bottom: auto;
 }
 
-h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, p1, p2, p3, p5, p9, p10, p11, p12, p13, p14{ /* all fonts here */
+h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, p1, p2, p3, p5, p9, p10, p11, p12, p13, p14{ /* all fonts here */
     font-family: 'Inter', sans-serif;
 }
 
@@ -113,6 +119,7 @@ h11{
 
 p12, p13, p14{
     font-weight: bold;
+
 }
 
 .introhead{
