@@ -57,7 +57,7 @@ body{                       /* body bg */
     margin-bottom: auto;
 }
 
-h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, p1, p2, p3, p5, p9, p10, p11, p12, p13, p14{ /* all fonts here */
+h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11, h12, h14, h15, h17, p1, p2, p3, p5, p9, p10, p11, p12, p13, p14, p15, p16, p17{ /* all fonts here */
     font-family: 'Inter', sans-serif;
 }
 
@@ -120,6 +120,40 @@ h11{
 p12, p13, p14{
     font-weight: bold;
 
+}
+
+.productinfo{
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+h15{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p15{
+    font-size: 16px;
+    font-weight: regular;
+}
+
+p16{
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+h17{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p17{
+
+}
+
+.spectitles{
+    margin-top: 3.6rem;
 }
 
 .introhead{
@@ -210,4 +244,42 @@ p12, p13, p14{
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
+}
+
+.productpic{
+    border-radius: 2rem;
+}
+
+.boxes{
+    width: 300px;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.list-group{
+    width: 200px;
+}
+
+.colour, .variant{
+    margin-left: 2rem;
+}
+
+.colour{
+    margin-bottom: 1rem;
+}
+
+.variant{
+    margin-bottom: 2rem;
+}
+
+.btn-group{
+    background-color: white !important;
+}
+
+.buybttn{
+    margin-left: 2rem;
+}
+
+.pics{
+    margin-top: 2rem;
 }

@@ -2,7 +2,7 @@
 
 /* All text properties within the CSS */
 
-h1, p1, p2, p6, .cancelbutton{
+h1, p1, p2, p6, p16 .cancelbutton{
     font-family: 'Inter', sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -24,6 +24,11 @@ p6{
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+p16{
+    font-weight: bold;
+    margin-right: 1rem;
 }
 
 /* for body bg colour */
@@ -111,7 +116,7 @@ body{
 }
 
 .addfirst{
-    width: 450px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
@@ -119,7 +124,7 @@ body{
 }
 
 .addsubsequent{
-    width: 450px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
@@ -142,6 +147,19 @@ body{
     margin-top: 3rem;
     color: rgb(255, 255, 255);
     font-weight: bold;
+}
+
+.gaurbutton1{
+    margin-top: 3rem;
+    margin-left: -5rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.variant{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .cancelornot{
