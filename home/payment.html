@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet"> <!-- Legacy CSS on the first folder, whoops -->
+    <title>Payment | Thirdd Gadgets</title>
+
+    <!-- Preload images -->
+    <link href="images/blurbg.png" rel="preload" as="image">
+
+  </head>
+
+  <body>
+
+    <form action="payment.html"> <!-- form validation -->
+    <div class="d-flex align-items-center justify-content-center" style="min-height: 100vh; margin: 0;"> <!-- making sure na nasa centre ang content -->
+    
+        <div class="container"> <!-- Card container -->
+            <div class="card customized-card">
+                <div class="card-body">
+                    <div class="row align-items-center justify-content-center">
+
+                        <div class="col-6"> <!-- 1st half, content -->
+
+                            <div class="text-center">
+                                <img src="media/purse.gif" class="logoadd">
+                                <h1>Select Payment Method</h1>
+                                <p1>Please fill out this form before checking out.</p1>
+                            </div>
+
+                            <div class="row cancelornot">
+
+                                <div class="col">
+                                    <a href="index.html">
+                                        <button type="button" class="btn naurbutton">Cancel</button>
+                                    </a>
+                                </div>
+
+                                <div class="col">
+                                    <a href="payment.html">
+                                        <button type="submit" class="btn btn-primary gaurbutton1">Proceed to Payment</button>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-6"> <!-- 2nd half, content -->
+                
+                            <div class="form-floating addfirst">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="juan Dela Cruz" required autofocus>
+                                <label for="floatingInput">Full Name</label>
+                            </div>
+
+                            <div class="form-floating addsubsequent">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="juan Dela Cruz" required autofocus>
+                                <label for="floatingInput">Address</label>
+                            </div>
+
+                            <div class="form-floating addsubsequent">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="juan Dela Cruz" required autofocus>
+                                <label for="floatingInput">Email</label>
+                            </div>
+
+                            <div class="form-floating addsubsequent">
+                                <input type="number" class="form-control" id="floatingInput" placeholder="juan Dela Cruz" required autofocus>
+                                <label for="floatingInput">Phone Number</label>
+                            </div>
+
+                            <div class="variant addsubsequent">
+                                <p16 class="mt-3 mb-1">Mode of Delivery:</p16>
+                                <div class="btn-group" role="group" aria-label="Variant Selector">
+                                    <input type="radio" class="btn-check" name="variantRadio" id="variant1" autocomplete="off" required>
+                                    <label class="btn btn-outline-primary" for="variant1">Store Pickup <b>[Free]</b></label>
+        
+                                    <input type="radio" class="btn-check disabled" name="variantRadio" id="variant2" autocomplete="off" required>
+                                    <label class="btn btn-outline-primary" for="variant2">Delivery <b>[Fees may Apply]</b></label>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </form>
+
+  </body>
+
+</html>
