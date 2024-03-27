@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+#modalVideo {
+    width: 100%;
+    height: auto;
+}
+
+.calculator {
+    margin-top: 100px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; /* Position relative for the moving text */
+}
+
+p1 {
+    position: relative;
+    top: 50%;
+    left: 0;
+    animation: moveText 5s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes moveText {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px); /* Adjust the width of the text */
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    margin: 5px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.grey{
+    background-color: lightgrey !important;
+    border-color: none !important;
+    color: #171717 !important;
+}
+
+.orange{
+    background-color: orange !important;
+    border-color: none !important;
+    color: white !important;
+}
+
+.supergrey{
+    background-color: #171717 !important;
+    border-color: none !important;
+    color: white !important;
+}
+
+.zerobut{
+    width: 176px;
+    border-radius: 50px;
+}
+
+.buttongroup{
+    margin-top: 3rem;
+}

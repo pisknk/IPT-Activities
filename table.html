@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+
+    <script>
+        window.onload = function() {
+            calculateTotal();
+        };
+
+        function calculateTotal(){
+            document.getElementById("total1").innerHTML = 4 + 4;
+            document.getElementById("total2").innerHTML = 2 + 6;
+            document.getElementById("total3").innerHTML = 4 + 8;
+            document.getElementById("total4").innerHTML = 4 + 8;
+            document.getElementById("overall").innerHTML = 8 + 8 + 12 + 12;
+        }
+    </script>
+
+    <body>
+
+        <div class="container text-center header"> <!-- Header of webpage -->
+            <div class="row">
+                <div class="col">
+                    <img src="images/logo.png" class="logoleft">
+                </div>
+                <div class="col">
+                    <h1>Bukidnon State University</h1>
+                    <p>Malaybalay City, Bukidnon, 8700</p>
+                    <p1>Tel (088) 813-5611 to 5663; Telefax (088) 813-2717, www.buksu.edu.ph</p1>
+                </div>
+                <div class="col">
+                    <img src="images/logo.png" class="logoright">
+                </div>
+            </div>
+        </div>
+
+            <!-- unothordox method, | Name and Information Area -->
+
+            <p2>Name:</p2>
+            <p3>Neil Marc C. Bayron</p3><br>
+
+            <p4>Year:</p4>
+            <p5>BSIT 2E</p5><br>
+
+            <p6>Student Number:</p6>
+            <p7>2001101888</p7><br>
+
+            <p8>Section Code:</p8>
+            <p9>T202</p9>
+
+        </div>
+        </div>
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="card classcard"> <!-- This is for katung card My Class Schedule -->
+                        <div class="card-body">
+                            <h2>MY CLASS SCHEDULE</h2>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start Table below -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="table table-bordered text-center" >
+
+                        <thead> <!-- Diri ang header sa table -->
+                            <tr> <!-- table row -->
+                                <td class="aquagreen" rowspan="2">Units</td> <!-- rowspan kay how many row it occupoes -->
+                                <td class="aquagreen" rowspan="2">Unit Title</td>
+                                <td class="yellow" rowspan="2">Instructor</td>
+                                <td class="lightblue" rowspan="2">Teaching Hours</td>
+                                <td class="teal" colspan="4">Theory Marks</td>
+                                    <tr>
+                                        <td class="aquagreen">R Level</td>
+                                        <td class="aquagreen">U Level</td>
+                                        <td class="aquagreen">A Level</td>
+                                        <td class="yellow">Total Marks</td>
+                                    </tr>
+                            </tr>
+                        </thead>
+            
+                        <tbody> <!-- Diri i butang ang content sa table -->
+                            <tr> <!-- First Entry -->
+                                <td class="teal">I</td>
+                                <td class="poopbrown">Intro to Computing</td>
+                                <td>Klevie Jun Caseres</td>
+                                <td class="teal">5</td>
+                                <td class="green">4</td>
+                                <td class="green">4</td>
+                                <td class="red">0</td>
+                                <td id="total1" class="violet"></td>
+                            </tr>
+                            <tr> <!-- Second Entry -->
+                                <td>II</td>
+                                <td class="violet">Computer Programming</td>
+                                <td>Mark Daniel Dacer</td>
+                                <td class="lightblue">6</td>
+                                <td class="red">0</td>
+                                <td class="green">2</td>
+                                <td class="green">6</td>
+                                <td id="total2" class="yellow"></td>
+                            </tr>
+                            <tr>
+                              <td class="violet">III</td>
+                              <td class="poopbrown">Integrative Programming</td>
+                              <td rowspan="2">Gil Nicolas Cagande</td>
+                              <td class="lightblue">6</td>
+                              <td class="green">4</td>
+                              <td class="green">8</td>
+                              <td class="red">0</td>
+                              <td id="total3" class="poopbrown"></td>
+                            </tr>
+                            <tr>
+                              <td>IV</td>
+                              <td>Information Management</td>
+                              <td class="teal">8</td>
+                              <td class="green">8</td>
+                              <td class="red">0</td>
+                              <td class="green">4</td>
+                              <td id="total4" class="violet"></td>
+                            </tr>
+                            <tr>
+                              <td colspan="6"></td>
+                              <td>Total</td>
+                              <td>40</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+</html>

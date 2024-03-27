@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+        <div class="container calculator">
+
+            <p1>Neil Bayron</p1>
+
+            <div class="display">
+
+            <div class="row"> <!-- display ang result ug ang input -->
+                <div class="col-md-12">
+                    <input type="text" id="display" class="form-control mb-2" readonly>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="buttongroup"><!-- buttons below -->
+
+                <div class="row"> <!-- AC ( ) and / buttons -->
+                    <div class="col-md-3">
+                        <button class="btn grey" onclick="clearDisplay()">AC</button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn grey" onclick="appendToDisplay('(')"> ( </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn grey" onclick="appendToDisplay(')')"> ) </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn orange" onclick="appendToDisplay('/')"> / </button>
+                    </div>
+                </div>
+
+                <div class="row"> <!-- 7 8 9 * buttons -->
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('7')"> 7 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('8')"> 8 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('9')"> 9 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn orange" onclick="appendToDisplay('*')"> * </button>
+                    </div>
+                </div>
+
+                <div class="row"> <!-- 4 6 5 - buttons -->
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('4')"> 4 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('5')"> 5 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('6')"> 6 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn orange" onclick="appendToDisplay('-')"> - </button>
+                    </div>
+                </div>
+
+                <div class="row"> <!-- 1 2 3 + buttons -->
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('1')"> 1 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('2')"> 2 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('3')"> 3 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn orange" onclick="appendToDisplay('+')"> + </button>
+                    </div>
+                </div>
+
+                <div class="row"> <!-- 0 = . buttons -->
+                    <div class="col-md-6">
+                        <button class="btn supergrey zerobut" onclick="appendToDisplay('0')"> 0 </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn supergrey" onclick="appendToDisplay('.')"> . </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn orange" onclick="calculate()"> = </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- easter egg -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Never Forget</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <img src="images/911.gif" alt="911" class="img-fluid">
+                </div>
+            </div>
+            </div>
+        </div> 
+
+        <!-- another easter egg lol -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">A Vine Reference?!!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <video controls autoplay width="100%" height="auto" id="modalVideo">
+                    <source src="images/910.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
