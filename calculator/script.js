@@ -1,3 +1,7 @@
+function changeBackground(theme) {
+    document.body.className = theme;
+}
+
 function appendToDisplay(value) {
     document.getElementById('display').value += value;
 }
