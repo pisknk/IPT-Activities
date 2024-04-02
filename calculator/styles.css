@@ -27,7 +27,7 @@ body.grayscale {
 
 .calculator {
     margin-top: 100px;
-    max-width: 400px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
     position: relative; /* position relative for moving text */
@@ -72,6 +72,7 @@ p1 {
     background-color: orange !important;
     border-color: none !important;
     color: white !important;
+    margin-right: 2rem;
 }
 
 .supergrey{
@@ -81,7 +82,7 @@ p1 {
 }
 
 .zerobut{
-    width: 176px;
+    width: 182px;
     border-radius: 50px;
 }
 
