@@ -69,7 +69,7 @@
                         <input type="text" class="form-control" id="address" placeholder="Address"
                             aria-label="Address" aria-describedby="basic-addon1">
                     </div>
-                    <button type="button" onclick="addUser()" class="btn btn-primary">Add User</button>
+                    <button id="addUserBtn" type="button" onclick="addUser()" class="btn btn-primary">Add User</button>
                 </form>
             </div>
         </div>
@@ -129,7 +129,7 @@
 
                 <td>
 
-                    <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+                    <button type="button" class="btn btn-warning" onclick="editUser(this)"><i class="bi bi-pencil-square"></i></button>
                     <button type="button" class="btn btn-danger" onclick="showDeleteConfirmation(this)"><i class="bi bi-trash3"></i></button>
 
                 </td>
@@ -145,9 +145,57 @@
             $("#alert").hide();
             $("#addSuccess").show(); // show alert
             setTimeout(function () {
-                $("#addSuccess").hide(); // hide alert after 3 seconds
+                $("#addSuccess").hide(); // hide alert
             }, 3000);
         }
+        
+        function editUser(button) {
+        let row = $(button).closest('tr');
+        let cells = row.find('td');
+        
+        // autofill
+        $("#stud_id").val(cells.eq(0).text());
+        let fullName = cells.eq(1).text().split(' ');
+        $("#fname").val(fullName[0]);
+        $("#lname").val(fullName[1]);
+        $("#email").val(cells.eq(2).text());
+        $("#age").val(cells.eq(3).text());
+        $("#address").val(cells.eq(4).text());
+        
+        // change to "update user"
+        $("#addUserBtn").text("Update Details").unbind("click").click(function() {
+            updateUser(row);
+        });
+    }
+
+    // function para sa update 
+    function updateUser(row) {
+        let cells = row.find('td');
+        cells.eq(0).text($("#stud_id").val());
+        cells.eq(1).text($("#fname").val() + " " + $("#lname").val());
+        cells.eq(2).text($("#email").val());
+        cells.eq(3).text($("#age").val());
+        cells.eq(4).text($("#address").val());
+        
+        // change to "add user" text
+        $("#addUserBtn").text("Add User").unbind("click").click(function() {
+            addUser();
+        });
+        
+        // clear field
+        $("#stud_id").val("");
+        $("#fname").val("");
+        $("#lname").val("");
+        $("#email").val("");
+        $("#age").val("");
+        $("#address").val("");
+        
+        // show alert
+        $("#addSuccess").show();
+        setTimeout(function () {
+            $("#addSuccess").hide();
+        }, 3000);
+    }
 
         function showDeleteConfirmation(button) {
 
@@ -160,7 +208,7 @@
                 $("#deleteConfirmation").hide();
                 $("#deleteSuccess").show(); // show success alert
                 setTimeout(function () {
-                    $("#deleteSuccess").hide(); // hide alert after 3 seconds
+                    $("#deleteSuccess").hide(); // hide aler
                 }, 3000);
             });
 
